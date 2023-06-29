@@ -7,11 +7,6 @@ session_start();
 if(isset($_POST['login']) && isset($_POST['mdp'])){
     setcookie('login', $_POST['login'], time() + 365*24*3600, null, null, false, true);
     setcookie('mdp', $_POST['mdp'], time() + 365*24*3600, null, null, false, true);
-
-    if(isset($_COOKIE['login']) && isset($_COOKIE['mdp'])){
-        echo 'Votre login est le ' .$_COOKIE['login'];
-        echo 'Votre login est le ' .$_COOKIE['mdp'];
-    }
 }
 ?>
 <!DOCTYPE html>

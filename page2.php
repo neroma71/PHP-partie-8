@@ -6,4 +6,5 @@ if(isset($_COOKIE['login']) && isset($_COOKIE['mdp'])){
     echo 'Votre login est ' .$_COOKIE['login'];
     echo 'Votre login est ' .$_COOKIE['mdp'];
 }
+
 ?>
